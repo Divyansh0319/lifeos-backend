@@ -1,138 +1,191 @@
-🚀 LifeOS
-Your Personal Growth & Productivity Operating System
+# 🚀 LifeOS Backend
 
-LifeOS is a modern full-stack productivity platform that helps users manage every aspect of their life from a single application.
+> A modern, modular backend powering **LifeOS** — a Personal Growth & Productivity Platform built with Spring Boot.
 
-Instead of using separate apps for habits, goals, tasks, learning, health, and productivity, LifeOS combines everything into one personalized platform with analytics, automation, and gamification.
+---
 
-🌟 Vision
-Our goal is to build an intelligent personal operating system that helps users become:
+## 📖 About
 
-More Productive
-More Disciplined
-Healthier
-Better Learners
-Financially Organized
-LifeOS adapts itself to each user by allowing them to choose only the modules they need.
+LifeOS is designed to help users manage every important area of life from one place.
 
-Examples:
+Instead of using multiple applications for habits, tasks, goals, learning, fitness, finance, and journaling, LifeOS provides a unified, customizable experience.
 
-Student
-Software Engineer
-Fitness Enthusiast
-Working Professional
-Entrepreneur
-Every user gets a personalized dashboard.
+Users can enable only the modules they need, creating a personalized productivity system.
 
-✨ Features
-Authentication
-JWT Authentication
-Refresh Token
-Email Verification (Planned)
-Password Reset (Planned)
-Productivity
-Habit Tracker
-Goal Management
-Task Management
-Projects
-Calendar
-Deep Work Tracker
-Pomodoro
-Health
-Workout Tracking
-Nutrition
-Water Intake
-Sleep Tracking
-Weight Tracking
-Learning
-Study Planner
-Reading Tracker
-Coding Tracker
-Revision Planner
-Finance
-Income
-Expenses
-Budget
-Savings
-Investments
-Analytics
-Productivity Score
-Habit Heatmaps
-Weekly Reports
-Monthly Reports
-Goal Progress
-Consistency Tracking
-Gamification
-XP
-Levels
-Badges
-Achievements
-Daily Challenges
-🛠 Tech Stack
-Backend
-Java 21
-Spring Boot
-Spring Security
-Spring Data JPA
-Hibernate
-PostgreSQL
-JWT
-Docker
-Frontend
-React
-TypeScript
-Tailwind CSS
-React Query
-DevOps
-Docker
-Docker Compose
-GitHub Actions (Planned)
-📁 Project Structure
-LifeOS consists of
+---
 
-Backend
-Frontend
-Documentation
-📌 Current Progress
- Project Planning
- Database Design
- Authentication
- User Module
- Habit Module
- Task Module
- Goal Module
- Calendar
- Dashboard
- Analytics
- Deployment
-🗺 Roadmap
-Version 1.0
-Authentication
-Habit Tracker
-Tasks
-Goals
-Dashboard
-Calendar
-Version 2.0
-Finance
-Health
-Learning
-Journal
-Version 3.0
-AI Coach
-Smart Recommendations
-Notifications
-Module Marketplace
-📖 Documentation
-Documentation will be available inside the /docs folder.
+## ✨ Features
 
-Requirements
-Architecture
-Database
-API Design
-Deployment Guide
-🤝 Contributing
-Currently this project is under active development.
+### Authentication
+- JWT Authentication
+- Refresh Token
+- Role-Based Authorization
+- Secure Password Encryption
+
+### Productivity
+- Habit Tracker
+- Task Management
+- Goal Management
+- Calendar
+- Dashboard
+
+### Analytics
+- Productivity Analytics
+- Habit Streaks
+- Weekly Reports
+- Monthly Reports
+
+### Health
+- Workout Tracking *(Planned)*
+- Nutrition *(Planned)*
+- Sleep Tracking *(Planned)*
+
+### Learning
+- Reading Tracker *(Planned)*
+- Study Planner *(Planned)*
+
+### Finance
+- Expense Tracker *(Planned)*
+- Budget Planner *(Planned)*
+
+---
+
+## 🏗 Architecture
+
+The project follows a **modular architecture**, where each feature is developed independently.
+
+Example:
+
+```
+habit
+├── controller
+├── dto
+│   ├── request
+│   └── response
+├── entity
+├── mapper
+├── repository
+├── service
+│   └── impl
+├── validation
+└── exception
+```
+
+---
+
+## 🛠 Tech Stack
+
+### Backend
+
+- Java 21
+- Spring Boot 3
+- Spring Security
+- Spring Data JPA
+- Hibernate
+- PostgreSQL
+- Maven
+- Lombok
+- Docker
+- OpenAPI / Swagger
+
+---
+
+## 📂 Project Status
+
+| Module | Status |
+|---------|--------|
+| Foundation | 🟢 In Progress |
+| Authentication | ⚪ Planned |
+| User | ⚪ Planned |
+| Habit | ⚪ Planned |
+| Task | ⚪ Planned |
+| Goal | ⚪ Planned |
+| Dashboard | ⚪ Planned |
+| Analytics | ⚪ Planned |
+
+---
+
+## 🚀 Getting Started
+
+### Clone Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/lifeos-backend.git
+```
+
+### Configure Environment
+
+Copy:
+
+```
+application-dev.example.yml
+```
+
+to
+
+```
+application-dev.yml
+```
+
+Update your PostgreSQL username and password.
+
+### Run
+
+```bash
+mvn spring-boot:run
+```
+
+---
+
+## 📚 API Documentation
+
+After starting the application:
+
+```
+http://localhost:8080/swagger-ui/index.html
+```
+
+---
+
+## 📈 Roadmap
+
+### Version 1.0
+
+- Authentication
+- User Module
+- Habit Tracker
+- Task Management
+- Goal Management
+- Dashboard
+
+### Version 2.0
+
+- Health
+- Learning
+- Finance
+- Journal
+
+### Version 3.0
+
+- AI Coach
+- Smart Analytics
+- Notifications
+- Gamification
+
+---
+
+## 🤝 Contributing
+
+Currently under active development.
 
 Contributions will be welcome after Version 1.0.
 
+---
+
+## 📜 License
+
+MIT License
+
+---
+
+⭐ If you like this project, consider giving it a star.
